@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ffallearl2018</string>
+    <string name="freefalltocrash">Free Fall To Crash Converter</string>
+    <string name="crashtofreefall">Crash To Free Fall Converter</string>
+    <string name="calculate">Calculate</string>
+    <string name="yolo">You Only Live Once</string>
+    <string name="maths">Maths Dont Matter When Youre Dead</string>
+    <string name="changeconverter">Change Converter</string>
+</resources>
