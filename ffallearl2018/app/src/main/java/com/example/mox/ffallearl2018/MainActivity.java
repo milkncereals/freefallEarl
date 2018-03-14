@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
                 //Take the users input as string
                 String s = speedInput.getText().toString();
+
+                //Pops up "Invalid Input" when nothing is entered
+                if (s.matches("")) {
+                    Toast.makeText(MainActivity.this, "Invalid Input", Toast.LENGTH_LONG).show();
+                    return;
+                }
 
                 //convert the String to a float value.
                 float speed = Float.parseFloat(s);
