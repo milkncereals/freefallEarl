@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.content.DialogInterface;
 
+import org.w3c.dom.Text;
+
 public class result extends AppCompatActivity {
     // This saves the results obtained from the conversions regardless of the orientation.
     @Override
@@ -117,6 +119,24 @@ public class result extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
+    //This is to save the variable regardless of orientation change.
+    //Full props + source below
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+
+        final TextView result = (TextView) findViewById(R.id.result);
+        outState.putString("my_text",result.getText().toString());
+        super.onSaveInstanceState(outState);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        final TextView result = (TextView) findViewById(R.id.result);
+        super.onRestoreInstanceState(savedInstanceState);
+        result.setText(savedInstanceState.getString("my_text"));
+    }
 }
 
 // Made changes to strings.xml
@@ -138,4 +158,29 @@ public Dialog onCreateDialog(Bundle savedInstanceState) {
     return builder.create();
 
 } */
+------------------------
+/*
+Change Metric Method - fixed!!
+Courtesy to a 2016 youtube video: https://www.youtube.com/watch?v=yhwtcEnI2Bg
+LOL :)))
+
+...
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        final TextView result = (TextView) findViewById(R.id.result);
+
+        outState.putString("my_text",result.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        final TextView result = (TextView)findViewById(R.id.result);
+        super.onRestoreInstanceState(savedInstanceState);
+
+        result.setText(savedInstanceState.getString("my_text")));
+    }
+
+*/
 
