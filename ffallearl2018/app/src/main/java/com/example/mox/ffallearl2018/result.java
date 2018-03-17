@@ -4,6 +4,7 @@ package com.example.mox.ffallearl2018;
  * Created by mox on 13/03/2018.
  */
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 import android.content.DialogInterface;
 
 public class result extends AppCompatActivity {
-
+    // This saves the results obtained from the conversions regardless of the orientation.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,4 +121,21 @@ public class result extends AppCompatActivity {
 
 // Made changes to strings.xml
 // Removed hardcoded texts for string localization purposes.  Using @string resource instead...
+// Adding in onSaveInstanceState + onRestoreInstanceState for static variables during orientation changes...
+/*
+Tried using the standard dialog setup, but having issues with savedInstanceStates for
+conversions.
+@Override
+public Dialog onCreateDialog(Bundle savedInstanceState) {
+    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+    builder.setTitle(R.string.pick_color)
+            .setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    // The 'which' argument contains the index position
+                    // of the selected item
+                }
+            });
+    return builder.create();
+
+} */
 
