@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">ffallearl2018</string>
+    <string name="finaltitle">Result</string>
+    <string name="freefall">Free Fall</string>
+    <string name="crash">Crash</string>
+    <string name="changemetricunits">Change Metric Units</string>
+    <string name="app_name" translatable="false">ffallearl2018</string>
     <string name="freefalltocrash">Free Fall To Crash Converter</string>
     <string name="crashtofreefall">Crash To Free Fall Converter</string>
     <string name="calculate">Calculate</string>

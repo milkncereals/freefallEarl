@@ -118,3 +118,6 @@ public class result extends AppCompatActivity {
     }
 }
 
+// Made changes to strings.xml
+// Removed hardcoded texts for string localization purposes.  Using @string resource instead...
+

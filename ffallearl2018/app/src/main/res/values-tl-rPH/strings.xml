@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ffallearl2018</string>
+    <string name="finaltitle">Resulta</string>
+    <string name="freefall">Mahulog</string>
+    <string name="crash">Disgrasya</string>
+    <string name="changemetricunits">Palitan ang Units</string>
+    <string name="freefalltocrash">Paghulog to Disgrasya Converter</string>
+    <string name="crashtofreefall">Disgrasya to Paghulog Converter</string>
+    <string name="calculate">BIlangin</string>
+    <string name="yolo">Isang beses ka lang buhay</string>
+    <string name="maths">Walang silbi ang maths pag patay ka</string>
+    <string name="changeconverter">palitan ang converter</string>
+</resources>

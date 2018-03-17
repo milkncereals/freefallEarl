@@ -14,7 +14,7 @@
         android:text="@string/freefalltocrash"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <EditText
@@ -51,7 +51,7 @@
             android:text="@string/yolo"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 
