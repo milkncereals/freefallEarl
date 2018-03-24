@@ -158,7 +158,7 @@ public Dialog onCreateDialog(Bundle savedInstanceState) {
     return builder.create();
 
 } */
-------------------------
+ // ------------------------
 /*
 Change Metric Method - fixed!!
 Courtesy to a 2016 youtube video: https://www.youtube.com/watch?v=yhwtcEnI2Bg
